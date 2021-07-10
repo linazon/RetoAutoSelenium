@@ -15,9 +15,12 @@ public class SignInTest extends BaseTest {
         signInPage.setUserName("linazon94@gmail.com");
         signInPage.setPassword("112358");
         MyAccountPage myAccountPage = signInPage.clickSignInButton();
-       // assertTrue(secureAreaPage.getAlertText().contains("You logged into a secure area!")
-        //        ,"Alert text is incorrect");
-        Thread.sleep(5000);
+        assertTrue(myAccountPage.getWelcomeMessage().contains("Welcome to your account. Here you can manage all of your" +
+                        " personal information and orders.")
+                ,"Welcome message is incorrect");
+        Thread.sleep(3000);
+        myAccountPage.clickLogOutButton();
+        Thread.sleep(3000);
     }
 
 }
