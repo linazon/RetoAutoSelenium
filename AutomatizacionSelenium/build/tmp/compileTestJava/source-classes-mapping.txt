@@ -1,3 +1,5 @@
+contactUs/ContactUsTest.java
+ contactUs.ContactUsTest
 base/BaseTest.java
  base.BaseTest
 signIn/SignInTest.java

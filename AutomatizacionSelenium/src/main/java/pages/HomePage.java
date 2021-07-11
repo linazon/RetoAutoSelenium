@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pages.hu_001.SignInPage;
+import pages.hu_002.ContactUsPage;
 
 public class HomePage {
 
@@ -12,13 +13,14 @@ public class HomePage {
         this.driver = driver;
     }
 
-    private void clickLink(String linkText){
-        driver.findElement(By.linkText(linkText)).click();
+    public SignInPage clickSignInPageButton(){
+        driver.findElement(By.linkText("Sign in")).click();
+        return new SignInPage(driver);
     }
 
-    public SignInPage clickFormAuthentication(){
-        clickLink("Sign in");
-        return new SignInPage(driver);
+    public ContactUsPage clickContactUsButton(){
+        driver.findElement(By.id("contact-link")).click();
+        return new ContactUsPage(driver);
     }
 
 }

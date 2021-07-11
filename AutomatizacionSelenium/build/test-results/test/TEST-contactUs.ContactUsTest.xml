@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="contactUs.ContactUsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-10T23:59:20" hostname="DESKTOP-OUTEJEQ" time="5.314">
+  <properties/>
+  <testcase name="testSendContact()" classname="contactUs.ContactUsTest" time="5.314"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 40556
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+jul. 10, 2021 6:59:16 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
