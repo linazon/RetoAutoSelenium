@@ -22,6 +22,7 @@ public class SignInTest extends BaseTest {
         Thread.sleep(3000);
         myAccountPage.clickLogOutButton();
         Thread.sleep(3000);
+
     }
 
 

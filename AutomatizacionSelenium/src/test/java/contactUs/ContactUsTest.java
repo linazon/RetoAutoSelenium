@@ -10,6 +10,9 @@ public class ContactUsTest extends BaseTest {
     public void testSendContact() throws InterruptedException{
         ContactUsPage contactUsPage = homePage.clickContactUsButton();
         contactUsPage.selectCustomerServiceList();
+        contactUsPage.setEmail("linazon94@gmail.com");
+        contactUsPage.setOrderNumber("TRJBZJFONBSP");
+        contactUsPage.attachFile("src/test/resources/File.png");
         Thread.sleep(3000);
     }
 
