@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="signIn.SignInTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-12T01:48:17" hostname="DESKTOP-OUTEJEQ" time="18.981">
+  <properties/>
+  <testcase name="testSuccessfullSignIn()" classname="signIn.SignInTest" time="18.981"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 31557
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+jul. 11, 2021 8:48:12 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

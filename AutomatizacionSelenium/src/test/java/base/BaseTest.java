@@ -18,8 +18,13 @@ public class BaseTest {
         System.setProperty("webdriver.chrome.driver",
                 "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("http://automationpractice.com/index.php");
+        homePage();
         homePage = new HomePage(driver);
+    }
+
+    @BeforeEach
+    public void homePage(){
+        driver.get("http://automationpractice.com/index.php");
     }
 
     @AfterAll
