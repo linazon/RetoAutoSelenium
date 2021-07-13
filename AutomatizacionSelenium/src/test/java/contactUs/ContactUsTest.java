@@ -2,6 +2,7 @@ package contactUs;
 
 import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import pages.hu_002.ContactUsPage;
@@ -18,11 +19,11 @@ public class ContactUsTest extends BaseTest {
         contactUsPage.selectSubjectHeadingList(index);
         contactUsPage.setEmail(email);
         contactUsPage.setOrderNumber(orderNumber);
-        //contactUsPage.attachFile("E:\\Sofka\\curso\\6. Automatizacion\\Reto1\\AutomatizacionSelenium\\RetoAutoSelenium\\AutomatizacionSelenium\\src\\test\\resources\\File.png");
+        contactUsPage.attachFile("E:\\Sofka\\curso\\6. Automatizacion\\Reto1\\AutomatizacionSelenium\\RetoAutoSelenium\\AutomatizacionSelenium\\src\\test\\resources\\File.png");
         contactUsPage.setMessage(containMessage);
         contactUsPage.clickSubmitButton();
-        Assertions.assertTrue(contactUsPage.getSuccessfulText().contains(alert1)
-                &&contactUsPage.getSuccessfulText().contains(alert2));
+        Assertions.assertTrue(contactUsPage.getAlertText().contains(alert1)
+                &&contactUsPage.getAlertText().contains(alert2),"Alert incorrect");
     }
 
 }
