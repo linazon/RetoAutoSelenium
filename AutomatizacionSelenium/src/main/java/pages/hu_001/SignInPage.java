@@ -3,21 +3,19 @@ package pages.hu_001;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static java.lang.Thread.sleep;
-
 public class SignInPage {
     private WebDriver driver;
     private By txtEmail = By.id("email");
     private By txtPassword = By.id("passwd");
     private By signInButton = By.id("SubmitLogin");
-    private By alertText = By.className("alert.alert-danger");
+    private By alertText = By.xpath("//div[@class='alert alert-danger']");
 
     public SignInPage(WebDriver driver){
         this.driver = driver;
     }
 
-    public void setUserName(String userName){
-        driver.findElement(txtEmail).sendKeys(userName);
+    public void setEmail(String email){
+        driver.findElement(txtEmail).sendKeys(email);
     }
 
     public void setPassword(String password){
@@ -30,11 +28,7 @@ public class SignInPage {
     }
 
     public String getAlertText(){
-        return driver.findElement(By.xpath("//div[@class='alert alert-danger']")).getText();
-
-        //return driver.switchTo().activeElement().getText();
-
+        return driver.findElement(alertText).getText();
     }
-
 
 }

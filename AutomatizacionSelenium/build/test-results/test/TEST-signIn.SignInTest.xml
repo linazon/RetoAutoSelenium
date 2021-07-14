@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="signIn.SignInTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-07-13T00:01:19" hostname="DESKTOP-OUTEJEQ" time="38.32">
+<testsuite name="signIn.SignInTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-07-13T23:24:38" hostname="DESKTOP-OUTEJEQ" time="59.902">
   <properties/>
-  <testcase name="[1] , , There is 1 error, An email address required." classname="signIn.SignInTest" time="4.831"/>
-  <testcase name="[2] , 112358, There is 1 error, An email address required." classname="signIn.SignInTest" time="3.909"/>
-  <testcase name="[3] lina, 112358, There is 1 error, Invalid email address." classname="signIn.SignInTest" time="4.128"/>
-  <testcase name="[4] 56, 112358, There is 1 error, Invalid email address." classname="signIn.SignInTest" time="3.685"/>
-  <testcase name="[5] linazon94gmail.com, 112358, There is 1 error, Invalid email address." classname="signIn.SignInTest" time="4.221"/>
-  <testcase name="[6] linazon94@gmail, 112358, There is 1 error, Invalid email address." classname="signIn.SignInTest" time="3.867"/>
-  <testcase name="[7] nurypinedapineda@gmail.com, 112358, There is 1 error, Authentication failed." classname="signIn.SignInTest" time="4.828"/>
-  <testcase name="[8] linazon94@gmail.com, passwordtest, There is 1 error, Authentication failed." classname="signIn.SignInTest" time="4.126"/>
-  <testcase name="[9] linazon94@gmail.com, 124, There is 1 error, Invalid password." classname="signIn.SignInTest" time="4.708"/>
+  <testcase name="testSuccessfullSignIn()" classname="signIn.SignInTest" time="8.969"/>
+  <testcase name="[1] , , There is 1 error, An email address required." classname="signIn.SignInTest" time="5.307"/>
+  <testcase name="[2] , 112358, There is 1 error, An email address required." classname="signIn.SignInTest" time="6.025"/>
+  <testcase name="[3] lina, 112358, There is 1 error, Invalid email address." classname="signIn.SignInTest" time="5.582"/>
+  <testcase name="[4] 56, 112358, There is 1 error, Invalid email address." classname="signIn.SignInTest" time="4.754"/>
+  <testcase name="[5] linazon94gmail.com, 112358, There is 1 error, Invalid email address." classname="signIn.SignInTest" time="5.442"/>
+  <testcase name="[6] linazon94@gmail, 112358, There is 1 error, Invalid email address." classname="signIn.SignInTest" time="5.729"/>
+  <testcase name="[7] nurypinedapineda@gmail.com, 112358, There is 1 error, Authentication failed." classname="signIn.SignInTest" time="5.806"/>
+  <testcase name="[8] linazon94@gmail.com, passwordtest, There is 1 error, Authentication failed." classname="signIn.SignInTest" time="5.769"/>
+  <testcase name="[9] linazon94@gmail.com, 124, There is 1 error, Invalid password." classname="signIn.SignInTest" time="6.495"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 35499
+  <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 31210
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-jul. 12, 2021 7:01:15 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+jul. 13, 2021 6:24:33 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

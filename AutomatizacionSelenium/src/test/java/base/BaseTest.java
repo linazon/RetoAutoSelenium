@@ -5,30 +5,28 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
 
-import static org.testng.Assert.assertTrue;
-
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class BaseTest {
 
-    private WebDriver driver;
-    protected HomePage homePage;
+    private WebDriver chromeDriver;
+    protected HomePage homePageChrome;
 
     @BeforeAll
     public void setUp(){
         System.setProperty("webdriver.chrome.driver",
                 "src/test/resources/chromedriver.exe");
-        driver = new ChromeDriver();
+        chromeDriver = new ChromeDriver();
         homePage();
-        homePage = new HomePage(driver);
+        homePageChrome = new HomePage(chromeDriver);
     }
 
     @BeforeEach
     public void homePage(){
-        driver.get("http://automationpractice.com/index.php");
+        chromeDriver.get("http://automationpractice.com/index.php");
     }
 
     @AfterAll
     public void tearDown(){
-        driver.quit();
+        chromeDriver.quit();
     }
 }

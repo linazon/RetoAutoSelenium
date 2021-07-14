@@ -23,6 +23,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '3.141.59'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-edge-driver', version: '3.141.59'
 }
 
 test {
